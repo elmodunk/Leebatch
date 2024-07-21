@@ -31,7 +31,7 @@ jobs:
         copy wallpaper.png D:\a\wallpaper.png
         copy parttwo.bat D:\a\parttwo.bat
     - name: Making TAP
-      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
+      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
     - name: Connect.
       run: cmd /c partone.bat
     - name: Successful implementation!
